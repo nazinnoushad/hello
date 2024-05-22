@@ -1,0 +1,81 @@
+/* Paste your CSS code here */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9; /* Light grey background color */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.container > div {
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  background-color: #fff; /* White background color */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+}
+
+textarea {
+  width: calc(100% - 20px);
+  height: 150px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: none;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Light grey background color for text areas */
+  transition: border-color 0.3s;
+}
+
+textarea:focus {
+  border-color: #007bff; /* Border color on focus */
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333; /* Dark grey text color */
+}
+
+.preview {
+  grid-column: span 3;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Styling for buttons */
+button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff; /* Blue button color */
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+  transform: translateY(-2px); /* Move button up slightly on hover */
+}
+
+/* Styling for responsiveness */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
